@@ -1,0 +1,143 @@
+/* Contact Section Styling */
+.Contact-Section {
+  background:url('./src/assets/contact-bg.jpg') center/cover no-repeat;
+  font-family: 'Arial', sans-serif;
+  background-size: cover;
+  padding: 40px 20px;
+  z-index: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10 20px;
+}
+
+.contact-content {
+  display: flex;
+  gap: 60px;
+}
+
+.contact-form {
+  flex: 1;
+  background: #132821;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form h2 {
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.form-description {
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 0.5;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;          /* full width of their container */
+  box-sizing: border-box; /* includes padding and border in width */
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #1e293b;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  background-color: hsl(199, 48%, 33%);
+;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #111134;
+  transform: translateY(-2px);
+}
+
+.contact-text {
+  flex: 1;
+  padding: 20px 0;
+  position: relative;
+  top: 100px; /* Move down by 50px - adjust this value as needed */
+  margin-bottom: -50px; /* Compensate for the vertical shift */
+  z-index: 2; /* Ensure text stays above background elements */
+}
+
+.contact-text h3 {
+  font-size: 35px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  line-height: 1;
+  width: 500px;
+}
+
+.contact-text p {
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.question {
+  font-style: italic;
+  margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .contact-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .contact-form {
+    padding: 30px;
+  }
+  
+  .contact-text {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-section {
+    padding: 60px 0;
+  }
+  
+  .contact-form h2 {
+    font-size: 28px;
+  }
+  
+  .contact-text h3 {
+    font-size: 24px;
+  }
+}

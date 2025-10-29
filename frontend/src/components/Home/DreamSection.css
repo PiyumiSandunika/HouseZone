@@ -1,0 +1,120 @@
+/* Dream Section Styling */
+.dream-section {
+  padding: 60px 0;
+  background-color: #1C604C;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.dream-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.dream-image {
+  flex: 1;
+}
+
+.dream-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  max-height: 500px;
+}
+
+.dream-text {
+  flex: 1;
+  padding: 0 40px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 5px;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 30px;
+  line-height: 1.3;
+}
+
+.dream-text p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.cta-button {
+  background-color: hsl(199, 59%, 21%);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background-color: #111134;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .dream-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .dream-text {
+    padding: 0;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 32px;
+  }
+  
+  h3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .dream-section {
+    padding: 60px 0;
+  }
+  
+  h2 {
+    font-size: 28px;
+  }
+  
+  h3 {
+    font-size: 24px;
+  }
+  
+  .dream-text p {
+    font-size: 16px;
+  }
+  
+  .cta-button {
+    padding: 12px 24px;
+  }
+}

@@ -1,0 +1,116 @@
+.footer {
+  background-color: #1C604C;
+  color: white;
+  padding: 40px 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-section:first-child {
+  flex: 1.2; /* Gives Find Us more space */
+  margin-right: 60px; /* Specific space between Find Us and Links */
+}
+
+.footer-section:nth-child(2) {
+  flex: 1.5;
+  margin-right: 100px; /* Space between Links and Newsletter */
+}
+
+.footer-section:last-child {
+  flex: 1.5; /* Gives Newsletter more space */
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-section img {
+  width: 50px; /* Fixed width for logo */
+  height: 50px; /* Fixed height for logo */
+  object-fit: contain; /* Preserves aspect ratio */
+}
+
+.footer-section span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000000;
+  line-height: 1;
+  position: relative;
+}
+
+/* Specific section styling */
+.footer-contact li,
+.footer-links li {
+  list-style: none;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-links li a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links li a:hover {
+  color: white;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.footer-section h3 {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.subscribe-btn {
+  background-color: #418271;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.subscribe-btn:hover {
+  background-color: #3587a2;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 0px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+  
+  .newsletter-form {
+    flex-direction: column;
+  }
+}

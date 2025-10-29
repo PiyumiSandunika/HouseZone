@@ -1,0 +1,171 @@
+/* Featured Homes - Horizontal Layout */
+.featured-homes {
+  padding: 80px 0px 30px;
+  background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+/* Section Header Styling */
+.section-header {
+  text-align: center;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.section-header h2 {
+  font-size: 2.4rem; /* 40px equivalent */
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
+
+.section-header p {
+  font-size: 1.125rem; /* 18px equivalent */
+  color: #666;
+  margin: 0 auto;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* Horizontal Scrolling Container */
+.properties-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 25px;
+  padding: 20px 10px 30px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.properties-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Property Card */
+.property-card {
+  flex: 0 0 350px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+}
+
+.property-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.property-image {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.property-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.property-card:hover .property-image img {
+  transform: scale(1.05);
+}
+
+/* Property type tags with different colors */
+.property-type {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  z-index: 1;
+}
+
+/* Specific colors for each type */
+.property-type[data-type="For sale"] {
+  background-color: #2cd73d; /* Dark green for sale */
+}
+
+.property-type[data-type="For rent"] {
+  background-color: #9b509b; /* Teal green for rent */
+}
+
+.property-info {
+  padding: 20px;
+}
+
+.property-price {
+  color: #418271;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.property-info h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.property-address {
+  color: #666;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.property-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  font-size: 14px;
+  color: #555;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.property-details span {
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .property-card {
+    flex: 0 0 300px;
+  }
+  
+  .property-image {
+    height: 180px;
+  }
+  
+  .featured-homes {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .property-card {
+    flex: 0 0 280px;
+  }
+  
+  .property-details {
+    grid-template-columns: 1fr;
+  }
+  
+  .featured-homes h2 {
+    font-size: 24px;
+  }
+}

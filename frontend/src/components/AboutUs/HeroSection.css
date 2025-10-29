@@ -1,0 +1,105 @@
+.Ahero {
+  position: relative;
+  margin-top: 50px;
+}
+
+.Ahero-background {
+  height: 500px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./src/assets/HSbackground.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.Ahero-content {
+  max-width: 600px;
+  padding: 0 2rem;
+}
+
+.Ahero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.Ahero-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.locations-container {
+  background-color: white;
+  padding: 2rem 0;
+  margin-top: -50px;
+  position: relative;
+  z-index: 10;
+}
+
+.locations-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+.location-card {
+  background-color: #1b8562;
+  color: rgb(0, 0, 0);
+  padding: 1.4rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.location-icon {
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+}
+
+.location-count {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.location-name {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .locations-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .locations-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .locations-grid {
+    grid-template-columns: 1fr;
+  }
+}

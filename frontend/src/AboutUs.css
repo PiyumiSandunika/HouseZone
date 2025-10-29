@@ -1,0 +1,10 @@
+.about-us {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Ensure proper spacing between sections */
+.about-us > * {
+  width: 98vw;
+}

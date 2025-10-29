@@ -1,0 +1,84 @@
+.personalized-section {
+  padding: 4rem 0;
+  background-color: #f8fafc;
+}
+
+.personalized-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.personalized-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.content-text {
+  padding-right: 2rem;
+}
+
+.personalized-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.personalized-description {
+  font-size: 1rem;
+  color: #010610;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.learn-more-btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.875rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.content-image {
+  position: relative;
+}
+
+.content-image img {
+  width: 99%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .personalized-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .content-text {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .personalized-title {
+    font-size: 2rem;
+  }
+
+  .content-image img {
+    height: 300px;
+  }
+}

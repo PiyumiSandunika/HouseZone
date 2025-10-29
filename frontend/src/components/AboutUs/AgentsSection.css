@@ -1,0 +1,150 @@
+.agents-section {
+  padding: 2rem 0;
+  background-color: white;
+}
+
+.agents-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.agents-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.agents-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.agents-subtitle {
+  font-size: 1.1rem;
+  color: #6b7280;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.agents-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.agent-card {
+  display: flex;
+  background-color: #f8fafc;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.agent-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.agent-image {
+  flex-shrink: 0;
+  margin-right: 1.5rem;
+}
+
+.agent-image img {
+  width: 180px;
+  height: 190px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.agent-info {
+  flex: 1;
+}
+
+.agent-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 0.25rem;
+}
+
+.agent-title {
+  color: #1c273a;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.agent-contact {
+  margin-bottom: 1rem;
+}
+
+.Acontact-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #dfd4d4; /* underline across full row */
+  padding-bottom: 4px; 
+}
+
+.Acontact-label {
+  color: #303339;
+  font-weight: 700;
+}
+
+.Acontact-value {
+  color: #1f2937;
+  font-weight: 450;
+}
+
+.agent-social {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  background-color: #1f2937;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #374151;
+}
+
+@media (max-width: 768px) {
+  .agents-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .agent-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .agent-image {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    align-self: center;
+  }
+
+  .contact-item {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .agent-social {
+    justify-content: center;
+  }
+}

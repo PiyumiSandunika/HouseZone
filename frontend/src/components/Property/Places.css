@@ -1,0 +1,152 @@
+.Psection-Header {
+  text-align: center;
+  margin-bottom: 40px;
+  width: 90vw;
+  background-image: url('./src/assets/F1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  
+  /* Flexbox centering */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* Curved corners + spacing */
+  border-radius: 300px;
+  box-sizing: border-box; /* Prevents padding from expanding total width */
+
+  /* Ensures content doesn't overflow rounded corners */
+  overflow: hidden;
+}
+
+.Psection-Header h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
+
+.Psection-Header p {
+  font-size: 1.125rem;
+  color: #131111;
+  margin: 0 auto;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.Psection-Header p {
+  font-size: 1.125rem; /* 18px equivalent */
+  color: #666;
+  margin: 0 auto;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.properties {
+  padding: 50px;
+  background: #f9f9f9;
+  margin-top: 40px;
+
+}
+
+.Placee-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.Placee-card {
+  flex: 0 0 350px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+}
+
+.Placee-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.Placee-image {
+  position: relative;
+  height: 245px;
+  overflow: hidden;
+}
+
+.Placee-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.Placee-card:hover .Placee-image img {
+  transform: scale(1.05);
+}
+
+.Placee-type {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.Placee-type[data-type="For_sale"] {
+  background-color: #2cd73d; /* Green for sale */
+}
+
+.Placee-type[data-type="For_rent"] {
+  background-color: #9b509b; /* Purple for rent */
+}
+
+.Placee-info {
+  padding: 20px;
+}
+
+.Placee-price {
+  color: #418271;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.Placee-title {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.Placee-address {
+  color: #666;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.Placee-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  font-size: 14px;
+  color: #555;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.Placee-details span {
+  display: flex;
+  align-items: center;
+}

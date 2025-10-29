@@ -1,0 +1,145 @@
+/* Reset some basics */
+* {
+  margin: 0 auto;
+  padding: 20;
+  box-sizing: border-box;
+}
+
+/* Header container styles */
+.header {
+  height: 55px;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Logo section */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+  margin-top: 10px; /* Adjust this value as needed */
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000;
+  line-height: 2;
+  position: relative;
+  top: 11px; /* Fine-tune vertical alignment if needed */
+}
+
+/* Navigation styles */
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.nav a:hover {
+  color: #418271;
+}
+
+.nav a.active {
+  border-bottom: 2.5px solid #1C604C;
+  padding-bottom: 0px;
+  color: #000000;
+  font-weight: bold;
+}
+
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0px; /* space between image and button */
+}
+
+/* Wrapper for button */
+.header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style for Login button */
+.header-login-btn {
+  background-color: #418271;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 2rem;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 5px;
+}
+
+.header-login-btn:hover {
+  background-color: #1C604C;
+}
+
+.header-logout-btn {
+  background-color: #c889bb;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 2rem;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 5px;
+}
+
+.header-logout-btn:hover {
+  background-color: #8b2f6c;
+}
+
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    margin-top: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .header-actions {
+    margin-top: 1rem;
+    align-self: flex-end;
+  }
+}
