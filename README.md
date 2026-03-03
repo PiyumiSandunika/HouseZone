@@ -19,7 +19,7 @@ The platform also includes an admin panel where administrators can manage proper
 
 ## 🏗️ Tech Stack
 
-* **Frontend:** ReactJS
+* **Frontend:** ReactJS, CSS
 * **Backend:** Spring Boot (Java)
 * **Database:** MySQL
 * **IDE:** IntelliJ IDEA
